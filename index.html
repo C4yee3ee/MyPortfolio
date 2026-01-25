@@ -4,265 +4,309 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Leslie Caye L. Shu | Portfolio</title>
-    <meta
-      name="description"
-      content="Portfolio of Leslie Caye L. Shu — 3rd year student. Java & Database certifications. Projects, skills, and contact info."
-    />
-    <link rel="stylesheet" href="styles.css" />
+    <meta name="description" content="Portfolio of Leslie Caye Shu" />
     <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
+    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    <nav class="navbar">
-      <div class="container nav-content">
-        <div class="nav-brand">
-          <i class="fa-solid fa-code"></i>
-          <span>My Portfolio</span>
-        </div>
+    <!-- Sticky centered navbar -->
+    <header class="topbar" id="top">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="#home" aria-label="Home">
+          <span class="brandText"><i class="fa-solid fa-code"></i></span>
+        </a>
 
-        <ul class="nav-links">
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#hobbies">Hobbies</a></li>
-          <li><a href="#contact">Contact</a></li>
+        <ul class="navLinks">
+          <li><a class="navLink" href="#home">Home</a></li>
+          <li><a class="navLink" href="#about">About</a></li>
+          <li><a class="navLink" href="#projects">Projects</a></li>
+          <li><a class="navLink" href="#contact">Contact</a></li>
         </ul>
-      </div>
-    </nav>
 
-    <header class="site-header">
-      <div class="container header-grid">
-        <div>
-          <h1 class="title">Leslie Caye L. Shu</h1>
-          <p class="subtitle">
-            3rd-year student building clean, user-friendly software and web
-            experiences. Certified in <strong>Java</strong> and
-            <strong>Database</strong>, with a growing interest in
-            <strong>Quality Assurance</strong> and reliable systems.
-          </p>
+        <div class="navActions">
+          <button
+            class="iconBtn"
+            id="themeToggle"
+            type="button"
+            aria-label="Toggle theme"
+            title="Toggle theme"
+          >
+            <i class="fa-solid fa-moon"></i>
+          </button>
 
-          <div class="cta-row">
-            <a class="btn" href="#contact"
-              ><i class="fa-solid fa-paper-plane"></i> Contact me</a
-            >
-            <a class="btn" href="#projects"
-              ><i class="fa-solid fa-code"></i> View projects</a
-            >
-          </div>
+          <button
+            class="iconBtn menuBtn"
+            id="menuToggle"
+            type="button"
+            aria-label="Menu"
+            title="Menu"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
         </div>
+      </nav>
 
-        <div class="card highlight">
-          <div class="card-row">
-            <span class="icon-badge"
-              ><i class="fa-solid fa-certificate"></i
-            ></span>
-            <div>
-              <h2 class="card-title">ITS Certifications</h2>
-              <p class="muted">Industry-recognized credentials</p>
-            </div>
-          </div>
-
-          <ul class="pill-list" aria-label="Certifications">
-            <li class="pill"><i class="fa-brands fa-java"></i> Java</li>
-            <li class="pill"><i class="fa-solid fa-database"></i> Database</li>
-          </ul>
-
-          <hr class="sep" />
-
-          <h3 class="section-mini">
-            <i class="fa-solid fa-screwdriver-wrench"></i> Core Skills
-          </h3>
-          <ul class="skills-grid" aria-label="Skills">
-            <li>Quality Assurance</li>
-            <li>Java</li>
-            <li>Python</li>
-            <li>C++</li>
-            <li>C#</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-          </ul>
-        </div>
+      <!-- Mobile menu -->
+      <div class="mobileMenu" id="mobileMenu" aria-label="Mobile Navigation">
+        <a href="#home" class="mLink">Home</a>
+        <a href="#about" class="mLink">About</a>
+        <a href="#projects" class="mLink">Projects</a>
+        <a href="#contact" class="mLink">Contact</a>
       </div>
     </header>
 
     <main id="main">
+      <!-- HOME -->
+      <section class="hero" id="home">
+        <div class="container heroInner">
+          <h1 class="quote">
+            “Procastination steals your time - but small habits fight back.
+            Start now, and watch progress happen.”
+          </h1>
+
+          <div class="cta">
+            <a class="btn primary" href="#projects"
+              ><i class="fa-solid fa-code"></i> View projects</a
+            >
+            <a class="btn" href="#contact"
+              ><i class="fa-solid fa-paper-plane"></i> Contact me</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section class="section" id="about">
+        <div class="container">
+          <div class="head">
+            <h2>About Me</h2>
+          </div>
+
+          <div class="grid2">
+            <!-- Profile card -->
+            <article class="card profile">
+              <div class="profileTop">
+                <div class="avatarMark" aria-hidden="true">LS</div>
+                <div>
+                  <h3 class="profileName">Leslie Caye L. Shu</h3>
+                  <p class="profileMeta">
+                    <span
+                      ><i class="fa-solid fa-location-dot"></i> Davao City,
+                      Philippines</span
+                    >
+                  </p>
+                </div>
+              </div>
+
+              <p class="profileBio">
+                3rd-year student with experience in Project Management and
+                Quality Assurance. Currently learning web development and
+                working toward becoming a full-stack developer, while exploring
+                AI and cybersecurity. I enjoy problem-solving, learning new
+                tech, and gaming in my free time.
+              </p>
+
+              <p class="profileBio2">
+                I like solving problems, learning new things, and experimenting
+                with different technologies. When I'm not coding, I'm probably
+                playing online games or exploring something new.
+              </p>
+
+              <div class="profileLinks">
+                <a
+                  class="miniLink"
+                  href="https://github.com/C4yee3ee"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <i class="fa-brands fa-github"></i> GitHub
+                </a>
+                <a
+                  class="miniLink"
+                  href="https://www.facebook.com/leslie.shu.03"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa-brands fa-facebook"></i>
+                  Facebook
+                </a>
+                <a
+                  class="miniLink"
+                  href="https://www.instagram.com/lslcy.sh/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa-brands fa-instagram"></i>
+                  Instagram
+                </a>
+              </div>
+            </article>
+
+            <!-- Certs + Skills -->
+            <article class="card">
+              <div class="certHeader">
+                <div class="certHeaderIcon">
+                  <i class="fa-solid fa-certificate"></i>
+                </div>
+                <div>
+                  <h3 class="certTitle">Certifications</h3>
+                </div>
+              </div>
+
+              <div class="certGrid" aria-label="Certifications">
+                <div class="certCard">
+                  <div class="certIcon">
+                    <i class="fa-brands fa-java"></i>
+                  </div>
+                  <div class="certText">
+                    <div class="certName">Java</div>
+                    <div class="certSub">ITS Certification</div>
+                  </div>
+                </div>
+
+                <div class="certCard">
+                  <div class="certIcon">
+                    <i class="fa-solid fa-database"></i>
+                  </div>
+                  <div class="certText">
+                    <div class="certName">Database</div>
+                    <div class="certSub">ITS Certification</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="divider"></div>
+
+              <h3 class="cardTitle">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+                Skills
+              </h3>
+              <div class="skillsWrap" aria-label="Skills">
+                <span class="skillChip">Quality Assurance</span>
+                <span class="skillChip">Java</span>
+                <span class="skillChip">Python</span>
+                <span class="skillChip">C++</span>
+                <span class="skillChip">C#</span>
+                <span class="skillChip">HTML</span>
+                <span class="skillChip">CSS</span>
+                <span class="skillChip">JavaScript</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
       <section class="section" id="projects">
         <div class="container">
-          <div class="section-head">
-            <h2>
-              <i class="fa-solid fa-folder-open"></i> Personal Code Projects
-            </h2>
-            <p class="muted">
-              Below are my personal coding projects linked directly to my
-              repositories. Each project reflects my experience with different
-              programming languagesand database systems.
-            </p>
+          <div class="head">
+            <div class="headRow">
+              <h2><i class="fa-solid fa-folder-open"></i> Projects</h2>
+              <a
+                class="btn small"
+                href="https://github.com/C4yee3ee"
+                target="_blank"
+                rel="noopener"
+              >
+                <i class="fa-brands fa-github"></i> View all
+              </a>
+            </div>
           </div>
 
-          <div class="grid cards">
-            <article class="card">
-              <h3 class="card-title">YowBrewCafe</h3>
-              <p class="muted">Java</p>
-              <p>
-                A Java-based café management system that handles orders, menu
-                items, and basic transaction flow using object-oriented
-                programming principles.
+          <div class="grid4">
+            <article class="card proj">
+              <h3 class="cardTitle">Yow Brew Café</h3>
+              <p class="muted">
+                Java-based café management system handling orders, menu items,
+                and transaction flow using OOP.
               </p>
-              <ul class="tags">
-                <li>Java</li>
-                <li>OOP</li>
-                <li>Desktop App</li>
-              </ul>
+              <p class="tech"><span>Tech stack:</span> Java • OOP</p>
               <a
-                class="btn"
+                class="btn small primary"
                 href="https://github.com/C4yee3ee/YowBrewCafe.git"
                 target="_blank"
+                rel="noopener"
               >
-                <i class="fa-brands fa-github"></i> View Repository
+                <i class="fa-brands fa-github"></i> Repository
               </a>
             </article>
 
-            <article class="card">
-              <h3 class="card-title">Qismet_Cafe</h3>
-              <p class="muted">Python and Local Database</p>
-              <p>
-                A Python café kiosk system with local database integration for
-                handling products, orders, and stored records, implementing
-                role-based functionality for Admin, Customer, and Barista users.
+            <article class="card proj">
+              <h3 class="cardTitle">Qismet Café</h3>
+              <p class="muted">
+                Python café kiosk system with local database integration and
+                role-based functionality.
               </p>
-              <ul class="tags">
-                <li>Python</li>
-                <li>Local DB</li>
-                <li>CRUD</li>
-                <li>Desktop App</li>
-              </ul>
+              <p class="tech">
+                <span>Tech stack:</span> Python • Local DB • CRUD
+              </p>
               <a
-                class="btn"
+                class="btn small primary"
                 href="https://github.com/C4yee3ee/Qismet_Cafe.git"
                 target="_blank"
+                rel="noopener"
               >
-                <i class="fa-brands fa-github"></i> View Repository
+                <i class="fa-brands fa-github"></i> Repository
               </a>
             </article>
 
-            <article class="card">
-              <h3 class="card-title">MyGestion</h3>
-              <p class="muted">C# with Local and Online Database</p>
-              <p>
-                A C# management system that supports both local and online
-                databases, focusing on data handling, validation, and system
-                reliability.
+            <article class="card proj">
+              <h3 class="cardTitle">My Gestion</h3>
+              <p class="muted">
+                C# management system supporting local and online databases,
+                focused on validation and reliability.
               </p>
-              <ul class="tags">
-                <li>C#</li>
-                <li>Database</li>
-                <li>Management System</li>
-                <li>Desktop App</li>
-              </ul>
+              <p class="tech"><span>Tech stack:</span> C# • Local/Online DB</p>
               <a
-                class="btn"
+                class="btn small primary"
                 href="https://github.com/C4yee3ee/MyGestion.git"
                 target="_blank"
+                rel="noopener"
               >
-                <i class="fa-brands fa-github"></i> View Repository
+                <i class="fa-brands fa-github"></i> Repository
               </a>
             </article>
 
-            <article class="card">
-              <h3 class="card-title">CPPexercises</h3>
-              <p class="muted">C++</p>
-              <p>
-                A collection of C++ exercises focused on strengthening logic,
-                problem-solving skills, and understanding core programming
-                concepts.
+            <article class="card proj">
+              <h3 class="cardTitle">C++ Exercises</h3>
+              <p class="muted">
+                C++ exercises focused on logic, problem-solving, and core
+                programming fundamentals.
               </p>
-              <ul class="tags">
-                <li>C++</li>
-                <li>Algorithms</li>
-                <li>Practice</li>
-              </ul>
+              <p class="tech"><span>Tech stack:</span> C++ • Algorithms</p>
               <a
-                class="btn"
+                class="btn small primary"
                 href="https://github.com/C4yee3ee/CPPexercises.git"
                 target="_blank"
+                rel="noopener"
               >
-                <i class="fa-brands fa-github"></i> View Repository
+                <i class="fa-brands fa-github"></i> Repository
               </a>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="section alt" id="hobbies">
-        <div class="container">
-          <div class="section-head">
-            <h2><i class="fa-solid fa-heart"></i> Hobbies</h2>
-            <p class="muted">What I enjoy outside academics and coding.</p>
-          </div>
-
-          <div class="grid hobby-grid">
-            <div class="card">
-              <div class="card-row">
-                <span class="icon-badge"
-                  ><i class="fa-solid fa-gamepad"></i
-                ></span>
-                <h3 class="card-title">Online Games</h3>
-              </div>
-              <p>
-                Casual to competitive games that sharpen teamwork and fast
-                decision-making.
-              </p>
-            </div>
-
-            <div class="card">
-              <div class="card-row">
-                <span class="icon-badge"
-                  ><i class="fa-solid fa-chess"></i
-                ></span>
-                <h3 class="card-title">Chess</h3>
-              </div>
-              <p>
-                Strategy practice—planning, pattern recognition, and staying
-                calm under pressure.
-              </p>
-            </div>
-
-            <div class="card">
-              <div class="card-row">
-                <span class="icon-badge"
-                  ><i class="fa-solid fa-puzzle-piece"></i
-                ></span>
-                <h3 class="card-title">Sudoku</h3>
-              </div>
-              <p>
-                Logic puzzles for focus and problem-solving—one grid at a time.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
+      <!-- CONTACT -->
       <section class="section" id="contact">
         <div class="container">
-          <div class="section-head">
-            <h2><i class="fa-solid fa-address-card"></i> Contact Me</h2>
-            <p class="muted">
-              Feel free to reach out to me through any of the platforms below. I
-              am open to collaboration, project discussions, and learning
-              opportunities.
-            </p>
+          <div class="head">
+            <h2><i class="fa-solid fa-address-card"></i> Contact</h2>
           </div>
 
-          <div class="grid contact-grid">
-            <div class="card">
-              <h3 class="card-title">Details</h3>
-              <ul class="contact-list">
+          <div class="grid2">
+            <article class="card">
+              <h3 class="cardTitle">Details</h3>
+
+              <ul class="contactList">
                 <li>
                   <i class="fa-solid fa-envelope"></i>
-                  <a href="l.shu.520536@umindanao.edu.ph"
+                  <a href="mailto:l.shu.520536@umindanao.edu.ph"
                     >l.shu.520536@umindanao.edu.ph</a
                   >
                 </li>
@@ -274,6 +318,7 @@
                   <i class="fa-brands fa-facebook"></i>
                   <a
                     href="https://www.facebook.com/leslie.shu.03"
+                    target="_blank"
                     rel="noopener noreferrer"
                     >Facebook</a
                   >
@@ -282,6 +327,7 @@
                   <i class="fa-brands fa-instagram"></i>
                   <a
                     href="https://www.instagram.com/lslcy.sh/"
+                    target="_blank"
                     rel="noopener noreferrer"
                     >Instagram</a
                   >
@@ -290,81 +336,85 @@
                   <i class="fa-brands fa-github"></i>
                   <a
                     href="https://github.com/C4yee3ee"
+                    target="_blank"
                     rel="noopener noreferrer"
-                    >Github</a
+                    >GitHub</a
                   >
                 </li>
               </ul>
-            </div>
+            </article>
 
-            <div class="card">
-              <h3 class="card-title">Quick Message (optional)</h3>
+            <article class="card">
+              <h3 class="cardTitle">Quick Message</h3>
               <p class="muted">
-                This form is front-end only (no backend). It's okay for a
-                portfolio demo.
+                Open to project discussions, collaboration, and learning
+                opportunities.
               </p>
-              <form class="form" onsubmit="return false;">
-                <label>
-                  Your name
+
+              <form class="form" id="contactForm">
+                <label class="field">
+                  <span class="fieldLabel">Your name</span>
                   <input
+                    class="input"
                     type="text"
                     placeholder="e.g., Juan Dela Cruz"
                     autocomplete="name"
                   />
                 </label>
-                <label>
-                  Email
+
+                <label class="field">
+                  <span class="fieldLabel">Email</span>
                   <input
+                    class="input"
                     type="email"
                     placeholder="e.g., name@email.com"
                     autocomplete="email"
                   />
                 </label>
-                <label>
-                  Message
+
+                <label class="field">
+                  <span class="fieldLabel">Message</span>
                   <textarea
+                    class="input"
                     rows="4"
                     placeholder="Write your message here..."
                   ></textarea>
                 </label>
-                <button class="btn" type="submit">
+
+                <button class="btn primary" type="submit">
                   <i class="fa-solid fa-paper-plane"></i> Send
                 </button>
               </form>
-            </div>
+            </article>
           </div>
+
+          <footer class="footer">
+            <p class="muted">
+              © <span id="year"></span> Leslie Shu. All rights reserved. <br />
+              Made with
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart inline -translate-y-[2px] rotate-6 ml-0.5"
+                aria-hidden="true"
+              >
+                <path
+                  d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"
+                ></path>
+              </svg>
+            </p>
+          </footer>
         </div>
       </section>
     </main>
 
-    <footer class="site-footer">
-      <div class="container footer-row">
-        <p class="muted">
-          © <span id="year"></span> Leslie Caye L. Shu. Made with
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="1.5"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="lucide lucide-heart inline -translate-y-[2px] rotate-6 ml-0.5"
-            aria-hidden="true"
-          >
-            <path
-              d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"
-            ></path>
-          </svg>
-        </p>
-        <p class="muted small">l.shu.520536@umindanao.edu.ph — 09054479245.</p>
-      </div>
-    </footer>
-
-    <script>
-      document.getElementById("year").textContent = new Date().getFullYear();
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
